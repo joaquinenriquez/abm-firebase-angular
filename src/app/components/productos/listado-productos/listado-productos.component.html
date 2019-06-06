@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <h6 class="text-center">Listado de productos</h6>
+    <table class="table table-sm table-sm table-hover">
+      <tbody>
+        <tr>
+          <tr *ngFor="let unProducto of listadoProductos">
+            <td>{{unProducto.nombre}}</td>
+            <td>{{unProducto.categoria}}</td>
+            <td>{{unProducto.ubicacion}}</td>
+            <td>{{unProducto.precio}}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
